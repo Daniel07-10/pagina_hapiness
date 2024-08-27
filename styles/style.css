@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:hover {
+    color: blue;
+}
+
+button {
+    cursor: pointer;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+header {
+    height: 80px;
+
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* esto es para que el navegador se mantenga a la vista asi se haga scroll sobre la pagina */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    background-color: #F5CB00;
+    height: 80px;
+    gap: 70%;
+    align-items: center;
+}
+
+.anclas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.anclas * {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin-bottom: 300px;
+}
+
+.section1 img {
+    margin-top: 80px;
+}
+
+.texto-section1 {
+    margin-top: 140px;
+}
+
+.texto-section1 {
+    width: 20%;
+}
+
+.section1 img {
+    width: 35%;
+
+}
+
+.texto-section1 h1 {
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 0.8;
+    font-weight: lighter;
+}
+
+.texto-section1 p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 0.9;
+}
+
+.texto-section1 * {
+    margin-bottom: 30px;
+}
+
+.texto-section1 button {
+    background-color: #F5CB00;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 150px;
+}
+
+.div-posicionado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 760px;
+
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 400px;
+    gap: 35%;
+    background-color: #E6E6E6;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.div-texto {
+    width: 18%;
+}
+
+.div-texto * {
+    margin-bottom: 10px;
+}
+
+.div-texto h2 {
+    color: #F5CB00;
+    font-size: 65px;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.div-texto p {
+    text-align: justify;
+    font-size: 19px;
+    line-height: 1;
+}
+
+.div-texto button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.div-imagenes {
+    display: flex;
+    gap: 70px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    gap: -20px;
+    background-color: #F5CB00;
+    height: 1250px;
+}
+
+.section2 img {
+    margin-top: 30%;
+    width: 50%;
+    height: 600px;
+}
+
+.div-texto-section2 * {
+    margin-bottom: 20px;
+}
+
+.div-texto-section2 {
+    margin-top: 20%;
+    width: 30%;
+    line-height: 0.9;
+}
+
+.div-texto-section2 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.div-texto-section2 p {
+    width: 72%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.boton {
+    background-color: #000000;
+    color: white;
+    font-size: 15px;
+    height: 45px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.section3 {
+    height: 1000px;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-section3 {
+    display: flex;
+
+    background-color: #E6E6E6;
+    width: 75%;
+    height: 75%;
+    margin-top: 7%;
+    box-shadow: 25px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.div-texto-section3 {
+    width: 54%;
+    margin: 5% 5% 5% 8%;
+}
+
+.div-texto-section3 h2 {
+    color: #F5CB00;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.div-texto-section3 p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.div-texto-section3 * {
+    margin-bottom: 10px;
+}
+
+.div-principal img {
+    width: 45%;
+    margin-left: 40%;
+
+}
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    height: 1000px;
+}
+
+.div-section4 * {
+    margin-bottom: 20px;
+}
+
+.div-section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.div-section4 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #F5CB00;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+.div-section4 p {
+    color: white;
+    font-size: 18px;
+    opacity: 0.9;
+    margin: 0px 20% 50px 20%;
+
+}
+
+.div-section4 img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 40px;
+}
+
+.boton-amarillo {
+    background-color: #F5CB00;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 150px;
+}
+
+.section5 {
+    display: flex;
+    height: 700px;
+}
+
+.div-section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 2% 5% 2%;
+    gap: 5%;
+}
+
+
+.div-texto-section5 {
+    width: 23%;
+}
+.div-texto-section5 p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.div-texto-section5 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 590;
+    font-size: 60px;
+}
+
+.section6{
+    display: flex;
+    background-color: #E6E6E6;
+    height: 750px;
+}
+
+.div-section6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 5%;
+}
+.div-section6 img{
+    width: 45%;
+    height: 640px;
+}
+
+.texto-section6{
+    width: 34%;
+}
+.texto-section6 h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 650%;
+    font-weight: lighter;
+    line-height: 1;
+}
+.texto-section6 p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: justify;
+}
