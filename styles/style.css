@@ -26,10 +26,7 @@ button {
         "wdth" 100;
 }
 
-header {
-    height: 80px;
 
-}
 
 .principal {
     display: flex;
@@ -65,12 +62,10 @@ header {
     display: flex;
     justify-content: center;
     gap: 8%;
+    margin-top: 80px;
     margin-bottom: 300px;
 }
 
-.section1 img {
-    margin-top: 80px;
-}
 
 .texto-section1 {
     margin-top: 140px;
@@ -82,10 +77,10 @@ header {
 
 .section1 img {
     width: 35%;
-
+    margin-top: 80px;
 }
 
-.texto-section1 h1 {
+h1 {
     font-size: 100px;
     font-family: "Bebas Neue", sans-serif;
     line-height: 0.8;
@@ -211,6 +206,7 @@ header {
     height: 45px;
     width: 180px;
     margin-top: 20px;
+    border: none;
 }
 
 /* seccion 3 */
@@ -498,6 +494,7 @@ input {
 .div-section8 img {
     height: 60%;
     margin-bottom: 20px;
+    width: 80%;
 }
 
 /* seccion 9: footer */
@@ -528,7 +525,8 @@ footer img {
     font-family: "Open Sans", sans-serif;
 }
 
-.div1-footer,.div2-footer {
+.div1-footer,
+.div2-footer {
     display: flex;
     flex-direction: column;
     margin-left: 3%;
@@ -549,16 +547,380 @@ footer hr {
     margin: 0px 5% 0px 3%;
 }
 
-.div-imagenes-footer{
+.div-imagenes-footer {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
+
 .div-imagenes-footer img {
-    filter: brightness(0) saturate(100%) invert(69%) sepia(99%) saturate(1201%) 
-    hue-rotate(6deg) brightness(104%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(69%) sepia(99%) saturate(1201%) hue-rotate(6deg) brightness(104%) contrast(102%);
 }
 
 a:hover {
     color: blue;
 }
+
+
+@media (max-width: 480px) {
+
+    /* haciendo que todas las secciones tomen una orden vertical en sus elementos */
+    .section1,
+    .section2,
+    .div-section3,
+    .div-section4,
+    .section4,
+    .div-section5,
+    .div-section6,
+    .section6,
+    .div-section7,
+    .section8,
+    .section9 {
+        flex-direction: column;
+    }
+
+    /* darle una medida al h1 que existe */
+    h1 {
+        font-size: 35px;
+    }
+
+    /* dandole una medida a todos los h2 */
+    .div-texto-section2 h2,
+    .div-texto-section2 h2,
+    .div-texto-section3 h2,
+    .texto-section6 h2,
+    .texto-section6 h2,
+    .div-texto h2,
+    .div-texto h2,
+    .div2-section7 h2 {
+        font-size: 40px;
+    }
+
+    /* media querie nav */
+    .principal {
+        flex-direction: column;
+        height: 150px;
+        gap: 15%;
+
+    }
+
+    .anclas {
+        width: 100%;
+        gap: 7%;
+    }
+
+
+    /* media querie para la seccion 1 */
+    .section1 img {
+        width: 80%;
+        height: 250px;
+        margin-left: 10%;
+        margin-top: 100px;
+    }
+
+    .texto-section1 {
+        margin-top: 50px;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        height: 100%;
+    }
+
+    .texto-section1 p {
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+    /* media querie para la seccion 2 */
+    .section2 {
+        height: 800px;
+    }
+
+    .div-texto-section2 {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .div-texto-section2 p {
+        width: 100%;
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+    .section2 img {
+        position: relative;
+        right: 0px;
+        margin-top: 10%;
+        width: 90%;
+        height: 250px;
+        margin-left: 5%;
+        margin-bottom: 1px;
+    }
+
+    /* media querie seccion 3 */
+    .section3 {
+        height: 1150px;
+    }
+
+    .div-section3 {
+        width: 90%;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        height: 1000px;
+    }
+
+    .div-texto-section3 {
+        width: 90%;
+        margin: 5% 0px 0px 0px;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .div-texto-section3 p {
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+    .div-principal img {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+
+
+    /* seccion 4 */
+    .section4 {
+        height: 600px;
+    }
+
+    .div-section4 {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: -10%;
+    }
+
+    .div-section4 p {
+        margin: 0 0 30px 0;
+        text-align: justify;
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+    .div-section4 img {
+        width: 100%;
+        height: 230px;
+    }
+
+    /* seccion 5 */
+    .section5 {
+        height: 600px;
+    }
+
+    .div-section5 {
+        width: 90%;
+    }
+
+    .div-section5 {
+        text-align: center;
+    }
+
+    .div-texto-section5 {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .div-texto-section5 p {
+        text-align: justify;
+        line-height: 1.2;
+        font-size: 20px;
+    }
+
+    .div-section5 img {
+        width: 100%;
+        margin-left: 5%;
+        height: 230px;
+    }
+
+    /* seccion 6 */
+    .section6 {
+        height: 650px;
+    }
+
+    .div-section6 {
+        text-align: center;
+    }
+
+    .texto-section6 {
+        width: 100%;
+    }
+    .texto-section6 p{
+        line-height: 1.2;
+        font-size: 20px;
+    }
+    .div-section6 img {
+        width: 100%;
+        height: 230px;
+        margin-top: 50px;
+    }
+
+    /* seccion 7 */
+    .div-section7 {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .div1-section7 {
+        width: 100%;
+    }
+
+    .inputs-container {
+        margin: 10px;
+    }
+    .inputs-container p{
+        line-height: 1.2;
+        font-size: 17px;
+    }
+
+    .input {
+        width: 45%;
+    }
+
+    input {
+        border: 2px solid white;
+    }
+
+    .div-section7 {
+        width: 100%
+    }
+
+    .div2-section7 {
+        margin-top: 30px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .div2-section7 p,
+    .div2-section7 h2,
+    .div2-section7 button {
+        width: 100%;
+    }
+
+    /* seccion 8 */
+    .section8{
+        height: 650px;
+    }
+    .div-section8{
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .div-section8 img{
+        width: 100%;
+        height: 320px;
+        margin-bottom: 15px;
+    }
+
+    /* footer */
+    footer{
+        height: 550px;
+    }
+    footer img{
+        margin-bottom: 30%;
+    }
+    .div-principal-footer{
+        gap: 40%;
+    }
+    .div1-footer{
+        gap: 20px;
+    }
+    .div2-footer{
+        gap: 25px;
+    }
+    .div3-footer {
+        font-size: 15px;
+    }
+      
+
+
+    /* div en el que se utilizó position en medio de la section 1 y 2 */
+
+    .div-posicionado {
+
+        flex-direction: column;
+
+
+
+        top: 800px;
+
+        width: 90%;
+        margin-left: 5%;
+        height: 400px;
+        gap: 15%;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+    .div-texto{
+        text-align: center;
+        width: 100%;
+    }
+    .div-texto *{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .div-imagenes{
+        gap: 10%;
+        justify-content: center;
+    }
+    .div-imagenes *{
+        width: 40%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
